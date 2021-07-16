@@ -1,0 +1,131 @@
+/* Geral */
+
+html,body {
+    height: 100%;
+}
+.navbar{
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 25px; 
+    display: inline;
+
+    border-style: solid;
+    border-color: red; 
+
+}
+
+
+    /* FIRST PAGE */
+    .section1{
+        height: 100%;
+        border-style: solid;
+        display: flex;
+    }
+
+    .typedtext{
+        font-family: 'Waiting for the Sunrise', cursive; 
+        font-size:40px; 
+        margin: auto; 
+        letter-spacing: 6px; 
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        align-items: center;
+        text-align: left;
+        border-style: solid;
+        border-color: orange;  
+    }  
+
+
+    /* SECOND PAGE */
+
+    .section2{
+        text-align: center;
+        border-style: solid;
+        border-color: royalblue;
+    }
+
+    .section2.container{
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-color: greenyellow;
+    }
+
+    .section2.img_about{
+     
+        padding: 20px;
+        max-width: 50%;
+        border-style: solid;
+        border-color: red;
+        align-items: center;
+    }
+    
+    .section2.about{
+   
+        padding: 10px;
+        max-width: 50%;
+        text-align: left;
+        border-style: solid;
+        border-color: red;
+        
+    }
+
+    /* THIRD PAGE */
+
+    .section3{
+        text-align: center;
+        border-style: solid;
+        border-color: royalblue;
+    }
+
+    .section3.container{
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-color: greenyellow;
+    }
+
+    .section3.img_about{
+     
+        padding: 20px;
+        max-width: 50%;
+        border-style: solid;
+        border-color: red;
+        align-items: center;
+    }
+    
+    .section3.about{
+   
+        padding: 10px;
+        max-width: 50%;
+        text-align: left;
+        border-style: solid;
+        border-color: red;
+        
+    }
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) { 
+    .typedtext{
+        align-items: left;
+    }
+    .section2.img_about{
+        display: none;
+    }
+    .section2.about{
+        max-width: 100%;
+    }
+
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+    /* .typedtext{
+        display: none;
+    } */
+}
