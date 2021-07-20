@@ -1,16 +1,23 @@
 /* Geral */
+@import url('https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise');
+
 
 html,body {
     height: 100%;
+    font-family: Georgia, serif;
 }
-.navbar{
-    font-family: 'Waiting for the Sunrise', cursive;
-    font-size: 25px; 
-    display: inline;
 
-    border-style: solid;
-    border-color: red; 
+h1{
+    font-size: 30px;
+}
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
 }
 
 .grid {
@@ -18,13 +25,68 @@ html,body {
     margin: 10px;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-  }
-  
+}
+
+    /*NAVBAR*/
+    .header{
+        border-bottom: 1px solid #696969;
+        height: 7%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #000000;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-left: 3rem;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .nav-link:hover{
+        color: #696969;
+    }
+
+    .nav-logo {
+        font-size: 2.1rem;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    .lang_en{
+        font-size:1;
+    }
 
     /* FIRST PAGE */
     .section1{
-        height: 100%;
-        border-style: solid;
+        height: 93%;
         display: flex;
     }
 
@@ -36,9 +98,7 @@ html,body {
         font-weight: bold;
         color: rgb(0, 0, 0);
         align-items: center;
-        text-align: left;
-        border-style: solid;
-        border-color: orange;  
+        text-align: left; 
     }  
 
 
@@ -46,49 +106,38 @@ html,body {
 
     .section2{
         text-align: center;
-        border-style: solid;
-        border-color: royalblue;
     }
 
     .section2.container{
         display: flex;
         justify-content: center;
-        border-style: solid;
-        border-color: greenyellow;
     }
 
     .section2.img_about{
-     
-        padding: 20px;
-        max-width: 50%;
-        border-style: solid;
-        border-color: red;
-        align-items: center;
+        padding: 10px;
+        width: 600px;
+        height: 450px;
+        object-fit:contain;
     }
     
     .section2.about{
    
         padding: 10px;
         max-width: 50%;
-        text-align: left;
-        border-style: solid;
-        border-color: red;
-        
+        text-align: justify;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     /* THIRD PAGE */
 
     .section3{
         text-align: center;
-        border-style: solid;
-        border-color: royalblue;
     }
 
     .section3.container{
         display: flex;
         justify-content: center;
-        border-style: solid;
-        border-color: greenyellow;
     }
 
     .section3.img{
@@ -96,8 +145,7 @@ html,body {
         object-fit: cover;
         width: 200px;
         min-height: 100%;
-        border-style: solid;
-        border-color: red;
+        padding-top: 10px;
     }
 
         /* Accordion styles */
@@ -109,46 +157,41 @@ html,body {
         }
 
         .tabs {
-            max-width: 100%;
+            max-width: 60%;
             margin: 10px;
-            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-            border-style: solid;
-            border-color: red;
+            text-align: justify;
         }
         .tab {
             width: 100%;
-            color: white;
+            color: #ffffff;
             overflow: hidden;
-            border-style: solid;
-            border-color: green;
         }
         .tab-label {
             display: flex;
             justify-content: space-between;
             padding: 1em;
-            background: #2c3e50;
+            background: #2c3c50;
             font-weight: bold;
             cursor: pointer;
         /* Icon */
         }
         .tab-label:hover {
-            background: #1a252f;
+            background: #1e2a38;
         }
         .tab-label::after {
             content: "\276F";
             width: 1em;
             height: 1em;
             text-align: center;
-            transition: all 0.35s;
+            transition: all 1s;
         }
         .tab-content {
             max-height: 0;
             padding: 0 1em;
             color: #2c3e50;
-            background: white;
-            transition: all 0.35s;
+            background: #ffffff;
+            transition: all 1s;
         }
         .tab-close {
             display: flex;
@@ -159,10 +202,10 @@ html,body {
             cursor: pointer;
         }
         .tab-close:hover {
-            background: #1a252f;
+            background: #1e2a38;
         }
         input:checked + .tab-label {
-            background: #1a252f;
+            background: #1e2a38;
         }
         input:checked + .tab-label::after {
             transform: rotate(90deg);
@@ -178,52 +221,66 @@ html,body {
 
     .section4{
         text-align: center;
-        border-style: solid;
-        border-color: royalblue;
     }
 
     .section4.container{
         display: flex;
-        justify-content: center;
-        border-style: solid;
-        border-color: greenyellow;
+        justify-content: center
     }
 
     .section4.project-box{
         height: 250px;
         width: 300px;
         border-radius: 20%;
-        background: rgb(255, 255, 255);
-        border-style: solid;
-        border-color: red;
+        padding: 20px;
+        background: #2c3c50;
         text-align: left;
+        color: #ffffff;
+    }
+    .section4.project-box:hover{
+        background: #1e2a38;
     }
     .section4.project-box.gitimg{
         height: 40px;
         width: 40px;
-        top:0;
-        right:0;
-        border-style: solid;
-        border-color: greenyellow;
+        padding: 0%;
+        margin-left: 80%; 
+    }
+    .section4.project-box.gitimg:hover{
+        background: #1e2a38;
     }
     
     
-    
+   
+    /* FOOTER*/
+    .footer{
+        width: 100%;
+        height: 50px;
+        border-top: 1px solid #696969;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        color: #696969;   
+    }
+
+  
+ 
+
     
 
+/* Language */
 
+html[lang="en"] .lang_en{ display: none;} 
+html[lang="pt"] .lang_pt{ display: none;} 
 
-    
-
-/* Desktop */
-@media screen and (min-width: 1025px) {
-    
-}
 
 /* Tablet */
 @media screen and (max-width: 1024px) { 
     .typedtext{
         align-items: left;
+    }
+    .tabs {
+        max-width: 100%;
     }
     .section2.img_about{
         display: none;
@@ -245,5 +302,48 @@ html,body {
 @media screen and (max-width: 767px) {
     .grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .navbar{
+        padding: 1rem 1.5rem;
+    }
+  
+
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
