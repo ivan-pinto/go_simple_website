@@ -69,7 +69,15 @@
 
 /*****************************************************/
 /*                                                   */
-/*   Language                                        */
+/*   Experiencia/Formacao                            */
 /*                                                   */
 /*****************************************************/
 
+function showFormacao() {
+    document.getElementById('formacao').style.display = "block";
+    document.getElementById('experiencia').style.display = "none";
+}
+function showExperiencia() {
+    document.getElementById('experiencia').style.display = "block";
+    document.getElementById('formacao').style.display = "none";
+ }
