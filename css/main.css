@@ -211,7 +211,7 @@ a {
             font: inherit;
             line-height: normal;
             cursor: pointer;
-            -moz-user-select: text;
+            user-select: text;
             display: block;
             text-decoration: none;
             text-transform: uppercase;
@@ -378,7 +378,7 @@ html[lang="pt"] .lang_pt{ display: none;}
     .navbar{
         padding: 1rem 1.5rem;
     }
-    
+
     .header{
         height: 8%;
     }
