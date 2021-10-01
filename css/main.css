@@ -282,7 +282,7 @@ a {
     .section4.project-box{
         height: 250px;
         width: 300px;
-        border-radius: 20%;
+        border-radius: 5%;
         padding: 20px;
         background: #000000;
         text-align: left;
