@@ -2,9 +2,9 @@
 
 Generate random numbers with GUI.
 
-![](https://img.shields.io/github/languages/count/ivan-pinto/go-simple-website)
-![](https://img.shields.io/github/repo-size/ivan-pinto/go-simple-website)
-![](https://img.shields.io/github/license/ivan-pinto/go-simple-website)
+![](https://img.shields.io/github/languages/count/ivan-pinto/my-website)
+![](https://img.shields.io/github/repo-size/ivan-pinto/my-website)
+![](https://img.shields.io/github/license/ivan-pinto/my-website)
 
 Personal website template made with pure js, html and css. Without frameworks.
 
